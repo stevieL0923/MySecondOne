@@ -1,1 +1,43 @@
-<p>clients works!</p>
+<div>
+    <h2>New Client Registration</h2>
+    </div>
+    
+    <form [formGroup]="clientForm" (ngSubmit)="validate()">
+        <div>
+            <label for="company"> Company Name </label>
+            <input id="company" type="text" formControlName="company" placeholder="Enter company name" required/>
+        </div>
+        <div>
+            <label for="address"> Address </label>
+            <input id="address" type="text" formControlName="address" placeholder="Enter street address" required/>
+        </div>
+        <div>
+            <label for="city"> City </label>
+            <input id="city" type="text" formControlName="city" placeholder="Enter city" required/>
+        </div>
+        <div>
+            <label for="state"> State </label>
+            <input id="state" type="text" formControlName="state" placeholder="Enter State" required/>
+        </div>
+        <div>
+            <label for="zipcode"> Zip Code </label>
+            <input id="zipcode" type="text" formControlName="zipcode" placeholder="Enter Zipcode" required
+            maxlength="5"/>
+        </div>
+        <div>
+            <label for="name"> POC Name </label>
+            <input id="name" type="text" formControlName="name" placeholder="Enter contact name" required/>
+        </div>
+        <div>
+            <label for="email"> Email </label>
+            <input id="email" type="text" formControlName="email" placeholder="Enter email address" required/>
+        </div>
+        <div>
+            <label for="mobile"> Phone </label>
+            <input id="phone" type="text" formControlName="phone" placeholder="Enter phone number" required maxlength="10"/>
+        </div>
+    
+        <button class="button" type="submit">Register</button>
+    </form>
+    
+    
